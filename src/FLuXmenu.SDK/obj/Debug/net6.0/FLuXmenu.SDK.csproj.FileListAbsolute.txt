@@ -1,0 +1,11 @@
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\bin\Debug\net6.0\FLuXmenu.SDK.deps.json
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\bin\Debug\net6.0\FLuXmenu.SDK.dll
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\bin\Debug\net6.0\FLuXmenu.SDK.pdb
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.GeneratedMSBuildEditorConfig.editorconfig
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.AssemblyInfoInputs.cache
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.AssemblyInfo.cs
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.csproj.CoreCompileInputs.cache
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.dll
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\refint\FLuXmenu.SDK.dll
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\FLuXmenu.SDK.pdb
+D:\FLuXmenu-0.1.0-source\FLuXmenu\src\FLuXmenu.SDK\obj\Debug\net6.0\ref\FLuXmenu.SDK.dll

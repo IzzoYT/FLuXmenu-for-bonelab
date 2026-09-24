@@ -1,0 +1,10 @@
+// Pattern for a real MelonLoader code mod assembly.
+// Add MelonLoader references in your own mod project.
+using FLuXmenu.SDK;
+using MelonLoader;
+
+public sealed class MyMelonMod : MelonMod, IFluxPluginProvider
+{
+    private readonly BasicPlugin.BasicTools _plugin = new();
+    public FluxPlugin CreateFluxPlugin() => _plugin;
+}

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FLuXmenu.SDK</AssemblyName>
+    <RootNamespace>FLuXmenu.SDK</RootNamespace>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+</Project>

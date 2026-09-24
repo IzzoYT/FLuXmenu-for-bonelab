@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FLuXmenu</AssemblyName>
+    <RootNamespace>FLuXmenu</RootNamespace>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\FLuXmenu.SDK\\FLuXmenu.SDK.csproj" />
+    <!-- Point these HintPaths at your own BONELAB modding references. -->
+    <Reference Include="MelonLoader" HintPath="..\\..\\references\\MelonLoader.dll" Private="false" Condition="Exists('..\\..\\references\\MelonLoader.dll')" />
+  </ItemGroup>
+  <PropertyGroup Condition="!Exists('..\\..\\references\\MelonLoader.dll')">
+    <DefineConstants>$(DefineConstants);FLUX_NO_MELON</DefineConstants>
+  </PropertyGroup>
+</Project>

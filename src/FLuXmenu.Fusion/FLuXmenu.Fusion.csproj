@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>FLuXmenu.Fusion</AssemblyName>
+    <RootNamespace>FLuXmenu.Fusion</RootNamespace>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\FLuXmenu.SDK\\FLuXmenu.SDK.csproj" />
+  </ItemGroup>
+</Project>
