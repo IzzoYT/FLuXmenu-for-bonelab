@@ -1,123 +1,48 @@
-# FLuXmenu-for-bonelab
-FLuXmenu — A modular radial utility framework for BONELAB.
-**A modular radial utility framework for BONELAB.**
+# FLuX
 
-FLuXmenu is a fast, lightweight radial menu system built specifically for BONELAB.
+**FLuX is an all-in-one BONELAB VR utility and weapon-analysis system featuring a wrist-mounted radial menu, holographic interfaces, weapon inspection, combat replay, scanning tools, and extensive customization.**
 
-Instead of using a traditional wrist menu or floating desktop-style interface, FLuXmenu uses a VR-native radial interaction system inspired by weapon wheels and quick-select interfaces.
+Built for **MelonLoader/LemonLoader + BoneLib**, FLuX is the evolution of ECHOX, redesigned around a fast monochrome radial interface while preserving its weapon-analysis systems.
 
-Hold the configured button, move toward an option, and release to select.
+### ✦ Features
 
-FLuXmenu uses a minimal **black-and-white visual style**, smooth animations, haptic feedback, nested radial pages, built-in gameplay utilities, and a public SDK that allows other BONELAB code mods to integrate directly into the menu.
+* **Wrist-Mounted Radial Menu** — Quickly access FLuX tools directly in VR.
+* **Customizable Controls** — Choose which controller button or button combination opens the radial menu through BoneMenu.
+* **Monochrome Holographic UI** — Transparent black-and-white interface with animated scanlines.
+* **Automatic Weapon Inspector** — Detects firearms, melee weapons, and compatible modded weapons.
+* **Quick Scan** — Scan weapons and objects without needing to grab them.
+* **Weapon Statistics** — View mass, velocity, impact information, components, and detected weapon properties.
+* **Holographic Weapon Display** — Floating information panel with animations, flicker, glow, and holo-deck effects.
+* **Weapon Outlines** — Highlight scanned weapons using model-based outlines.
+* **Combat Replay** — Replay recent combat moments with holographic visualization and statistics.
+* **Favorites & Tags** — Save and organize weapons you use frequently.
+* **Two-Hand Weapon Controls** — Toggle information while holding weapons with both hands.
+* **Configurable Interface** — Adjust UI scale, opacity, scanlines, animation speed, text appearance, and more.
+* **BoneMenu Integration** — Configure FLuX without editing configuration files.
+* **Quest + PCVR Focus** — Designed around lightweight runtime-generated UI and effects.
 
-## Core Features
+### ◉ FLuX Radial
 
-* Black-and-white radial interface
-* Fast controller-based navigation
-* Nested radial menus
-* Favorites wheel
-* Recent actions
-* Player utilities
-* Spawn utilities
-* Time controls
-* Developer tools
-* Quest and PCVR support
-* Optional LabFusion integration
-* Custom profiles
-* Configurable controls
-* Haptic feedback
-* Custom icons
-* Plugin system
-* Public SDK
+Hold your configured controller button or combination to summon the FLuX interface from your wrist.
 
-## FLuXmenu SDK
+Move the thumbstick toward an option and release the activation button to select it.
 
-FLuXmenu is designed to act as a shared UI framework for BONELAB code mods.
+Current radial actions include:
 
-Other mods can register their own:
+`INSPECTOR` • `QUICK SCAN` • `REPLAY` • `OUTLINE` • `FAVORITE` • `HOLOGRAM` • `SETTINGS` • `CLOSE`
 
-* Pages
-* Actions
-* Toggles
-* Sliders
-* Selectors
-* Dynamic labels
-* Notifications
-* Submenus
-* Settings
-* Icons
-* Context actions
+### Controller Bindings
 
-without modifying FLuXmenu itself.
+The radial activation combination can be changed from:
 
-```csharp
-using FLuXmenu.SDK;
+**BoneMenu → FLuX → FLuX Radial**
 
-public class ExamplePlugin : FluxPlugin
-{
-    public override string Name => "Example Tools";
-    public override string Author => "Nova";
+Available configurations include Secondary Button, Primary Button, Primary + Secondary, Grip + Secondary, and Trigger + Secondary.
 
-    public override void OnInitialize()
-    {
-        var page = FluxAPI.CreatePage(
-            "example.main",
-            "Example"
-        );
+### FLuX Philosophy
 
-        page.AddButton(
-            "hello",
-            "Hello",
-            () =>
-            {
-                FluxAPI.Notify("Hello from FLuXmenu!");
-            }
-        );
+FLuX is designed to feel like an actual system running inside BONELAB rather than a traditional flat mod menu.
 
-        page.AddToggle(
-            "feature",
-            "Feature",
-            false,
-            enabled =>
-            {
-                MelonLogger.Msg($"Feature: {enabled}");
-            }
-        );
+**Scan. Analyze. Control.**
 
-        FluxAPI.RegisterPage(page);
-    }
-}
-```
-
-FLuXmenu handles the radial rendering, input, navigation, haptics, menu placement, configuration, and platform differences automatically.
-
-## Design Philosophy
-
-FLuXmenu is built around four goals:
-
-**Fast**
-Common actions should be accessible almost instantly.
-
-**VR Native**
-The interface should behave like a VR interaction system, not a desktop UI attached to your hand.
-
-**Extensible**
-Other mods should be able to use FLuXmenu through a simple SDK.
-
-**Lightweight**
-The system should remain practical for standalone Quest hardware.
-
-## Visual Style
-
-FLuXmenu uses a strictly monochrome interface.
-
-* Matte black backgrounds
-* White outlines
-* White icons
-* White text
-* Inverted white selection segments
-* Black icons on selected segments
-* Minimal animations
-* No unnecessary visual clutter
-
-**Black. White. FLuX.**
+**FLuX // SYSTEM ONLINE**
